@@ -168,23 +168,23 @@
                     
                 </div>
                 
-                <div class="hero-shape-1">
+                <!-- <div class="hero-shape-1">
                     <img src="static/picture/shape1.png" alt="#">
-                </div>
-                <div class="hero-shape-2">
-                    <iframe width="300" height="600"
+                </div> -->
+                <div class="hero-shape-2 bounce-animate">
+                    <iframe id="screen_display_ton" width="260" height="600"
                     src="https://www.youtube.com/embed/8gocfGnS-gY?autoplay=1&mute=1"
                     frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"
                     >
                     </iframe>
-                    <!-- <img src="static/picture/shape2.jpg" alt="#"> -->
+                    <!-- <img src="static/picture/phantom.png" alt="#" style="height: 20%;"> -->
                 </div>
-                <div class="hero-shape-3 bounce-animate3">
+                <!-- <div class="hero-shape-3 bounce-animate3">
                     <img src="static/picture/shape3.jpg" alt="#">
                 </div>
                 <div class="hero-shape-4">
                     <img src="static/picture/shape5.png" alt="#">
-                </div>
+                </div> -->
                 <div class="hero-shape-5 rotateme">
                     <img src="static/picture/circle-shape-4.png" alt="#">
                 </div>
@@ -319,7 +319,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-thumb bounce-animate2">
-                        <img src="static/picture/about-img.png" alt="#">
+                        <img src="static/picture/phantom.png" alt="#">
                     </div>
                     <div class="about-shape-1">
                         <img src="static/picture/about-shape-1.png" alt="#">
@@ -723,6 +723,25 @@
     <script src="static/js/jquery.scrollUp.js"></script>
     <!-- jquery js -->
 
+    <script>
+         function isMobile() {
+            let flag = navigator.userAgent.match(
+                /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+            );
+            return flag;
+        }
+        var youtube = document.getElementById('screen_display_ton') ;
+        if(isMobile())
+        {
+            youtube.style.display='none'
+        }else{
+            var height = (window.screen.height * 0.8).toFixed(0);
+            var width = (window.screen.width * 0.25).toFixed(0);
+            youtube.height = height;
+            youtube.width = width;
+        }
+        
+    </script>
 </body>
 
 </html>
