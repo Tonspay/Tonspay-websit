@@ -168,23 +168,23 @@
                     
                 </div>
                 
-                <!-- <div class="hero-shape-1">
+                <div class="hero-shape-1">
                     <img src="static/picture/shape1.png" alt="#">
-                </div> -->
+                </div>
                 <div class="hero-shape-2 bounce-animate">
                     <iframe id="screen_display_ton" width="260" height="600"
-                    src="https://www.youtube.com/embed/8gocfGnS-gY?autoplay=1&mute=1"
+                    src="https://www.youtube.com/embed/Qb3nNCVmlpU?playlist=Qb3nNCVmlpU&autoplay=1&mute=1&loop=1"
                     frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"
                     >
                     </iframe>
                     <!-- <img src="static/picture/phantom.png" alt="#" style="height: 20%;"> -->
                 </div>
-                <!-- <div class="hero-shape-3 bounce-animate3">
+                <div class="hero-shape-3 bounce-animate3">
                     <img src="static/picture/shape3.jpg" alt="#">
                 </div>
                 <div class="hero-shape-4">
                     <img src="static/picture/shape5.png" alt="#">
-                </div> -->
+                </div>
                 <div class="hero-shape-5 rotateme">
                     <img src="static/picture/circle-shape-4.png" alt="#">
                 </div>
@@ -735,8 +735,8 @@
         {
             youtube.style.display='none'
         }else{
-            var height = (window.screen.height * 0.8).toFixed(0);
-            var width = (window.screen.width * 0.25).toFixed(0);
+            var height = (window.innerHeight * 0.6).toFixed(0); //16
+            var width = (height*15/28).toFixed(0); //9
             youtube.height = height;
             youtube.width = width;
         }
